@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>Icons/copy.png</file>
+        <file>Icons/cut.png</file>
+        <file>Icons/new.png</file>
+        <file>Icons/open.png</file>
+        <file>Icons/paste.png</file>
+        <file>Icons/save.png</file>
+        <file>Icons/Pause-icon.png</file>
+        <file>Icons/Play-1-Hot-icon.png</file>
+        <file>Icons/stop-red-icon.png</file>
+        <file>Icons/SIRO.png</file>
+        <file>Icons/LIFO.png</file>
+        <file>Icons/FIFO.png</file>
+        <file>Icons/Norton-System-Works-icon.png</file>
+        <file>Icons/box-out-icon.png</file>
+        <file>Icons/box-in-icon.png</file>
+        <file>Icons/tube.png</file>
+        <file>Icons/Qt.png</file>
+    </qresource>
+</RCC>
