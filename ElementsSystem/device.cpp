@@ -18,9 +18,6 @@ Device::Device(QGraphicsItem *parent) :
     m_nameStatus("Готов к работе"),
     m_proxyBar(new QGraphicsProxyWidget(this)),
     m_progressBar(new QProgressBar),
-    m_raduisInput(3),
-    m_centerLeftInput(m_raduisInput + 2, m_size.height()/2),
-    m_centerRightInput(m_size.width() - m_raduisInput - 2, m_size.height()/2),
     m_isFree(true),
     m_isWorkReady(false),
     m_timeToEndWork(0),
@@ -30,6 +27,11 @@ Device::Device(QGraphicsItem *parent) :
     m_proxyBar->setWidget(m_progressBar);
     m_progressBar->setValue(0);
     updateGeometryProgressBar();
+
+    m_raduisInput = 3;
+    m_centerLeftInput = QPointF(m_raduisInput + 2, m_size.height()/2);
+    m_centerRightInput = QPointF(m_size.width() - m_raduisInput - 2, m_size.height()/2);
+
 }
 
 Device::~Device()
