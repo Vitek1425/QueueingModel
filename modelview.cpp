@@ -14,9 +14,9 @@
 #include "ElementsSystem/fifoqueue.h"
 #include "ElementsSystem/lifoqueue.h"
 #include "ElementsSystem/siroqueue.h"
-#include <Gui/dialogdevice.h>
-#include <Gui/dialogoutputstream.h>
-#include <Gui/dialogqueue.h>
+#include <Dialogs/dialogdevice.h>
+#include <Dialogs/dialogoutputstream.h>
+#include <Dialogs/dialogqueue.h>
 
 ModelView::ModelView(QWidget *parent) : QGraphicsView(parent)
 {

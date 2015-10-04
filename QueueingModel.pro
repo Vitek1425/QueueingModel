@@ -27,9 +27,9 @@ SOURCES += main.cpp\
     ElementsSystem/queueSystem.cpp \
     ElementsSystem/siroqueue.cpp \
     ElementsSystem/device.cpp \
-    Gui/dialogdevice.cpp \
-    Gui/dialogoutputstream.cpp \
-    Gui/dialogqueue.cpp
+    Dialogs/dialogdevice.cpp \
+    Dialogs/dialogoutputstream.cpp \
+    Dialogs/dialogqueue.cpp
 
 HEADERS  += \
     joint.h \
@@ -46,15 +46,15 @@ HEADERS  += \
     ElementsSystem/queueSystem.h \
     ElementsSystem/siroqueue.h \
     ElementsSystem/device.h \
-    Gui/dialogdevice.h \
-    Gui/dialogoutputstream.h \
-    Gui/dialogqueue.h
+    Dialogs/dialogdevice.h \
+    Dialogs/dialogoutputstream.h \
+    Dialogs/dialogqueue.h
 
 FORMS += \
     mainwindow.ui \
-    Gui/dialogdevice.ui \
-    Gui/dialogoutputstream.ui \
-    Gui/dialogqueue.ui
+    Dialogs/dialogdevice.ui \
+    Dialogs/dialogoutputstream.ui \
+    Dialogs/dialogqueue.ui
 
 RESOURCES += \
     res.qrc

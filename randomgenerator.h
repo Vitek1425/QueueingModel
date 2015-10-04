@@ -6,6 +6,8 @@
 #include <QJSEngine>
 #include <random>
 
+//Генератор случайных чисел
+
 class RandomGenerator
 {
 public:
