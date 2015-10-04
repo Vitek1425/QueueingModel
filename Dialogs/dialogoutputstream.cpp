@@ -22,9 +22,12 @@ DialogOutputStream::~DialogOutputStream()
 void DialogOutputStream::setupValuesStream()
 {
     m_stream->setDensity(ui->spinBoxDensity->value());
+    m_stream->setNameElement(ui->lineEditName->text());
+
 }
 
 void DialogOutputStream::loadValuesFromStream()
 {
     ui->spinBoxDensity->setValue(m_stream->getDensity());
+    ui->lineEditName->setText(m_stream->getNameElement());
 }
