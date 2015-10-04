@@ -133,28 +133,28 @@ void ModelView::createActionJoint(Joint *joint)
 
 void ModelView::createActionDevice(Device *device)
 {
-    QAction *actionDelete = new QAction("Удалть", this);
+    QAction *actionDelete = new QAction(tr("Удалить"), this);
     addAction(actionDelete);
     connect(actionDelete, SIGNAL(triggered()), device, SLOT(deleteElement()));
 }
 
 void ModelView::createActionQueue(QueueSystem *queue)
 {
-    QAction *actionDelete = new QAction("Удалть", this);
+    QAction *actionDelete = new QAction(tr("Удалить"), this);
     addAction(actionDelete);
     connect(actionDelete, SIGNAL(triggered()), queue, SLOT(deleteElement()));
 }
 
 void ModelView::createActionOutputStream(OutputStream *stream)
 {
-    QAction *actionDelete = new QAction("Удалть", this);
+    QAction *actionDelete = new QAction(tr("Удалить"), this);
     addAction(actionDelete);
     connect(actionDelete, SIGNAL(triggered()), stream, SLOT(deleteElement()));
 }
 
 void ModelView::createActionInputStream(InputStream *stream)
 {
-    QAction *actionDelete = new QAction("Удалть", this);
+    QAction *actionDelete = new QAction(tr("Удалить"), this);
     addAction(actionDelete);
     connect(actionDelete, SIGNAL(triggered()), stream, SLOT(deleteElement()));
 }
