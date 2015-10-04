@@ -25,6 +25,7 @@ void DialogDevice::setupDefaultValues()
     ui->spinBoxLeftRange->setValue(10);
     ui->spinBoxRightRange->setValue(20);
     ui->textEditFunction->setText("(function(x) { return (x-10)/10; })");
+    ui->lineEditName->setText(m_device->getNameElement());
 }
 
 void DialogDevice::setupValuesDevice()
@@ -32,6 +33,7 @@ void DialogDevice::setupValuesDevice()
     m_device->setLeftBorderDistribution(ui->spinBoxLeftRange->value());
     m_device->setRightBorderDistribution(ui->spinBoxRightRange->value());
     m_device->setDistributionFunction(ui->textEditFunction->toPlainText());
+    m_device->setNameElement(ui->lineEditName->text());
 }
 
 void DialogDevice::loadValuesFromDevice()
@@ -41,6 +43,7 @@ void DialogDevice::loadValuesFromDevice()
     ui->spinBoxLeftRange->setValue(m_device->getLeftBorderDistribution());
     ui->spinBoxRightRange->setValue(m_device->getRightBorderDistribution());
     ui->textEditFunction->setText(m_device->getDistributionFunction());
+    ui->lineEditName->setText(m_device->getNameElement());
 }
 
 void DialogDevice::createConnections()
